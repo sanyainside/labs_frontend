@@ -1,0 +1,51 @@
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('../style/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'MyWebFont', 'Caveat', sans-serif;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.flex-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  min-width: 250px;
+  background: #f0f0f0;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.scrollable {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .flex-layout {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  header, footer {
+    display: none;
+  }
+}

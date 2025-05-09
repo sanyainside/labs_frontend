@@ -1,0 +1,27 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+  padding: 20px;
+}
+header, nav, main, section, article, aside, footer {
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  outline: 2px dashed #555;
+}
+h1, h2, h3 {
+  text-shadow: 1px 1px 2px #aaa;
+}
+textarea {
+  resize: vertical;
+  caret-color: red;
+}
+a {
+  cursor: pointer;
+}
+footer {
+  background: radial-gradient(circle, #ffffff, #cccccc);
+  border-image: linear-gradient(to right, red, orange) 1;
+}
